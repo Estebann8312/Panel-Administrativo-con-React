@@ -1,16 +1,38 @@
-# React + Vite
+# Panel Administrativo con React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Panel administrativo moderno desarrollado con React, Vite y React Router. Incluye navegación sin recarga, vistas para Clientes, Proveedores, Usuarios y Logout, con estilos basados en Bootstrap 5 y personalizaciones con soporte para modo oscuro/claro.
 
-Currently, two official plugins are available:
+## Captura de pantalla
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![Vista del panel administrativo](./captura.png)
 
-## React Compiler
+## Tecnologías utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 18** – Biblioteca para interfaces de usuario
+- **Vite** – Entorno de desarrollo rápido
+- **React Router DOM** – Enrutamiento y navegación SPA
+- **Bootstrap 5** – Framework de estilos (navbar, tarjetas, tablas, botones)
+- **Bootstrap Icons** – Iconografía
+- **CSS personalizado** – Variables CSS, modo oscuro automático, diseño centrado
 
-## Expanding the ESLint configuration
+## Características
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Barra de navegación fija con logo, enlaces y efecto activo.
+- Rutas configurables con `<BrowserRouter>`, `<Routes>` y `<NavLink>`.
+- Vistas:
+  - **Clientes**: tarjetas de resumen (totales, activos, ventas) y tabla de clientes con datos simulados.
+  - **Proveedor**: tarjetas con información de cada proveedor.
+  - **Usuarios**: tabla con roles, último acceso y estado.
+  - **Logout**: mensaje de cierre de sesión con opción para reiniciar.
+- Diseño responsive, sombras y efectos hover.
+- Modo oscuro automático según la preferencia del sistema operativo.
+- Footer institucional.
+
+## Instalación y ejecución
+
+Sigue estos pasos para levantar el proyecto en tu máquina local.
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/Estebann8312/panel-administrativo-final.git
+   cd panel-administrativo-final
