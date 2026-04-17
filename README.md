@@ -1,38 +1,40 @@
-# Panel Administrativo con React + Vite
+# 🧑‍💼 Panel Administrativo con React + Vite
 
-Panel administrativo moderno desarrollado con React, Vite y React Router. Incluye navegación sin recarga, vistas para Clientes, Proveedores, Usuarios y Logout, con estilos basados en Bootstrap 5 y personalizaciones con soporte para modo oscuro/claro.
+Proyecto académico para el taller de React JS. Consiste en un panel administrativo moderno con navegación SPA (Single Page Application) que incluye vistas de Clientes, Proveedor, Usuarios y Logout. Se utilizó **Vite** como herramienta de desarrollo, **React Router DOM** para las rutas y **Bootstrap 5** + **CSS personalizado** para el diseño, incluyendo soporte automático para modo oscuro/claro según la preferencia del sistema.
 
-## Captura de pantalla
+## 📸 Captura de pantalla
 
 ![Vista del panel administrativo](./captura.png)
 
-## Tecnologías utilizadas
+## 📋 Pasos seguidos para desarrollar el proyecto
 
-- **React 18** – Biblioteca para interfaces de usuario
-- **Vite** – Entorno de desarrollo rápido
-- **React Router DOM** – Enrutamiento y navegación SPA
-- **Bootstrap 5** – Framework de estilos (navbar, tarjetas, tablas, botones)
-- **Bootstrap Icons** – Iconografía
-- **CSS personalizado** – Variables CSS, modo oscuro automático, diseño centrado
+1. **Inicialización del proyecto**  
+   `npm create vite@latest panel-administrativo` → seleccionar React.
 
-## Características
+2. **Instalación de dependencias**  
+   `npm install`  
+   `npm install react-router-dom bootstrap bootstrap-icons`
 
-- Barra de navegación fija con logo, enlaces y efecto activo.
-- Rutas configurables con `<BrowserRouter>`, `<Routes>` y `<NavLink>`.
-- Vistas:
-  - **Clientes**: tarjetas de resumen (totales, activos, ventas) y tabla de clientes con datos simulados.
-  - **Proveedor**: tarjetas con información de cada proveedor.
-  - **Usuarios**: tabla con roles, último acceso y estado.
-  - **Logout**: mensaje de cierre de sesión con opción para reiniciar.
-- Diseño responsive, sombras y efectos hover.
-- Modo oscuro automático según la preferencia del sistema operativo.
-- Footer institucional.
+3. **Estructura de carpetas y componentes**  
+   Se creó la carpeta `src/pages/` con los componentes:  
+   `Clientes.jsx`, `Proveedor.jsx`, `Usuarios.jsx`, `Logout.jsx`.
 
-## Instalación y ejecución
+4. **Configuración de rutas**  
+   En `App.jsx` se implementó `<BrowserRouter>`, `<Routes>`, `<Route>` y `<NavLink>` para navegación sin recarga.
 
-Sigue estos pasos para levantar el proyecto en tu máquina local.
+5. **Estilizado**  
+   - Bootstrap 5 para la barra de navegación, tarjetas, tablas y botones.  
+   - Bootstrap Icons para los íconos.  
+   - Archivo `index.css` con variables CSS, modo oscuro automático y contenedor centrado.
 
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/Estebann8312/panel-administrativo-final.git
-   cd panel-administrativo-final
+6. **Mejoras visuales**  
+   - Tarjetas de resumen (totales, activos, ventas) en la vista Clientes.  
+   - Tabla de datos simulados con botones de acción.  
+   - Tarjetas con información de proveedores.  
+   - Tabla de usuarios con roles y estados.  
+   - Footer institucional.
+
+7. **Documentación y despliegue**  
+   - Se creó este `README.md`.  
+   - Se tomó una captura de pantalla del proyecto funcionando.  
+   - Se subió el código a GitHub.
